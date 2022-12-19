@@ -1,0 +1,53 @@
+enum  EmployeeType {
+    FullTime
+    PartTime
+    Seasonal
+    Contract
+}
+
+input inputEmployee {
+    FirstName: String!
+    LastName: String!
+    Age: Int
+    Title: String!
+    Department: String!
+    CurrentStatus: String!
+    EmployeeType : String!
+}
+
+input modifyEmployee{
+    _id: String!
+ 
+  
+    Title: String!
+    Department: String!
+    CurrentStatus: String!
+   
+}
+
+type Employee {
+    _id: String!
+    Id: String!
+    EmployeeType: EmployeeType!
+    FirstName: String!
+    LastName: String!
+    Age: Int!
+    DateOfJoining: String!
+    Department: String!
+    CurrentStatus: String!
+    Title: String! 
+}
+type Query {
+    about: String! 
+    EmployeeList(FirstName: String): [Employee!]
+    EmployeeFiltered(EmployeeType : String) : [Employee]
+    GetSingleEmployee(Id : Int) : Employee
+}
+type Mutation {
+    setAboutMessage(message: String!): String
+    AddOneEmployee(EmployeeType: String!, FirstName: String, LastName: String, Age: Int,  Title: String, DateOfJoining: String, Department:String, CurrentStatus: String): Employee
+    OneEmployee(_id: String!): Employee
+    UpdateEmployee(modifyEmployee: modifyEmployee): Employee,
+    DeleteEmployee(_id : String) : Employee
+}
+

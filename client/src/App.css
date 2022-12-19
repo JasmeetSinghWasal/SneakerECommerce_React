@@ -1,0 +1,169 @@
+body{
+  background-color: #eaeaea;
+}
+.App {
+  text-align: center;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.table{
+  margin-left:auto;
+  margin-right: auto;
+}
+.table table, th, td {
+  border: 1px solid black;
+  /* margin-left: 10%; */
+  padding:10px;
+  border-collapse: collapse;
+  padding:10px
+}
+.navbar nav{
+  background-color: rgb(69, 54, 54);
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+}
+.navbar nav a{ 
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+
+}
+.navbar nav :hover{
+  background-color: rgb(57, 200, 35);
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding:30px;
+}
+.navbar nav link{
+  font-size: 20px;
+}
+
+.alignLeftInputs
+{
+  text-align: left;
+}
+
+.addEmpTable{
+  border-collapse: collapse;
+  width:350px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.addEmpForm{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+
+.editEmpTable{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+
+.editEmpTable table, th, td {
+  border: 1px solid black;
+  margin-left: 20%;
+  border-collapse: collapse;
+  padding:10px
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #186d89;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filterStyles
+{
+  padding-left: 20px;
+  padding-right:20px;
+  color: rgb(72, 58, 202);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+.filterEmpTable {
+  border-collapse: collapse;
+  width: 42%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  border:1px solid #8c7b7b;
+  
+}
+.filterEmpTable tr{
+  border:none;
+}
+
+footer{
+  background-color: rgb(69, 54, 54);
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+  bottom: 0px;
+  position:fixed;
+  width :100%;
+}
+
+.jumbroimg{
+  height: 10%;
+}
+
+.ageInput
+{
+  width: 80%; 
+}
+
+.myEmpTable{
+  margin-left: 5% !important;
+  margin-bottom: 35px;
+}
+.viewEmp
+{
+  margin-bottom: 35px;
+  border-collapse: collapse;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: left;
+}
